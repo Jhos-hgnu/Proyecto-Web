@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<!--Comentar en HTML-->
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Porfolio Josué Hicho</title>
+    
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name= "robots" content="index, follow">
+    <meta name="theme-color" content="#FFDE59">
+    <meta name="description" content="Porfolio de Josué Hicho, estudiante de Ing en Sistemas, con conocimientos en Java,Js,TS, Node.js, MySql y Postgres">
+    
+    <!--OPEN GRAPH-->
+    <meta property ="og.title" content="Portafolio de un estudiante de Ing en Sistemas">
+    <meta property ="og.description" content="Porfolio de Josué Hicho, estudiante de Ing en Sistemas, con conocimientos en Java,Js,TS, Node.js, MySql y Postgres">
+    <meta property ="og.image" content="images/me.png">
+    <meta property = "og.image.alt" content="Una fotografía de Josué Hicho">
+
+    <!--Algunas etiquetas importantes para el CEO-->
+    <link rel = "alternate" href="https://holaejemplo.dev/en" hreflang="es-GB">
+    <link rel = "canonical" href="https://holaejemplo.dev">
+
+    <link rel="icon" type="image/png" href="images/me.png">
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    
+    <script src='main.js'></script>
+</head>
+
+
+<body>
+    <header>
+        <h1>Porfolio de el Inge Josué Hicho XD</h1>
+
+        <nav>
+            <a href="#experiencia">Experiencia</a>
+            <a href="#proyectos">Proyectos</a> <!--Enlaces internos-->
+            <a href="https://twitch.tv"
+            target="_blank"
+            rel="noreferrer"
+            >Twitch</a>
+        </nav>
+    </header>
+
+    <!-- <video autoplay loop muted src="videos/videogameplayForza.mp4"></video>-->
+    
+    <main>                   
+    <p>Estudiante de <strong>Ingeniería en Sistemas</strong>, con experiencia en proyectos
+        personales.
+    </p>
+    <h2 id ="experiencia">EXPERIENCIA</h2>
+
+    <ul>
+        <li>Html - 2020</li>
+        <li>Java - 2021</li>
+        <li>MySql - 2022</li>
+        <li>Indie - 2023</li>
+    </ul>
+
+    <a download href="images/me.png">
+    <img
+    id="photo-image"
+    width = "200"
+    height="200"
+    tittle ="Foto de Josué" 
+    alt="Una imagen de mi papus" 
+    src="images/me.png">
+    </a>
+
+    <h2>Proyectos</h2>
+
+    <aside>
+        <header>
+            <h3>Mis tecnologías</h3>
+        </header>
+        <ol>
+            <li>Java</li>
+            <li>JavaScript</li>
+            <li>MySql</li>
+            <li>Node.js</li>
+        </ol>
+    </aside>
+    
+
+    <section>
+        <article>
+            <header>
+                <h4>Una página de Tesla</h4>
+                <img src="images/tesla.png" alt="Captura de pantalla de la página web de Tesla">
+            </header>
+            <p>
+                Esta es una imagen del modelo de tesla, Elon Musk me dijo que pusiera ahí la imagen
+            </p>
+            <footer>
+                <small>Tecnologías utilizadas: HTML, CSS, JAVASCRIPT</small>
+            </footer>
+        </article>
+
+    </section>
+
+    <section>
+        <h2>Preguntas Frecuentes</h2>
+
+        <details open>
+            <summary>¿Qué estudios tengo?</summary>
+            <p>Estudié en la universidad Mariano Galvéz una Ingeniería en Sistemas por 5 años</p>
+        </details>
+
+        <details>
+            <summary>¿Cuáles son tus hobbies?</summary>
+            <p>Me gusta hacer ejercicio, tocar la guitarra y jugar videojuegos</p>
+        </details>
+
+        <details>
+            <summary>¿Cuál es mi lenguaje favorito?</summary>
+            <p>Mi lenguaje favorito sería JavaScript, aunque por el momento no tengo tanta experiencia con esa tecnología</p>
+        </details>
+
+    </section>
+
+    <section>
+        <h2>Formulario de contacto</h2>
+
+        <form method="post" action="/">
+            <fieldset>
+                <legend>Información personal</legend>
+
+                <div>
+                    <label>Nombre:
+                        <input type="text" name = "name" placeholder="EL PAPUU" required>
+                    </label>
+                </div>
+
+                <label> Email:
+                    <input type="email" name="email" placeholder="josue@gmail.com" required>
+                </label>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Información Adicional</legend>
+                <div>
+                    <label>Teléfono: 
+                        <input type="tel" name="telefono" placeholder="+502" required>
+                    </label>
+                </div>
+
+            </fieldset>
+            
+            <fieldset>
+                <legend>Otros</legend>
+
+                <div>
+                    <label for ="why">¿Por qué quieres contactar?</label>
+                    <select name = "why" id = "why">
+                        <option value = "1">Trabajo</option>
+                        <option value = "2">Duda</option>
+                        <option value = "3">Más información</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="terms">¿Aceptas los términos?</label>
+                    <input type="checkbox" id = "terms" name = "terms" required>                   
+                </div>
+
+                <div>
+                    <datalist id="languages">
+                        <option value="JavaScript"></option>
+                        <option value="Python"></option>
+                        <option value="Java"></option>
+                        <option value="C#"></option>
+                    </datalist>
+                    <label>
+                        ¿Con qué lenguaje quieres que te ayude?
+                        <input list="languages" name ="languages">
+                    </label>
+                </div>
+
+            </fieldset>
+            <!--En los forms se pueden usar inputs o Buttons -->
+             <!--<input type="submit" value="Enviar contacto">-->
+             <button>Enviar Contacto</button>       
+        </form>
+
+    </section>
+    
+    </main>
+    <footer>
+        Copyright @2025 - El porfolio más bello del mundo, baity mason
+        
+        <a href="tel: +5025567543"> Llamar por teléfono</a>
+        <a href="whatsapp://send?text=Hola">Mandar whatssaapp</a>
+    
+    </footer>
+    
+</body>
+</html>
